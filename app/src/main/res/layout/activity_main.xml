@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp"
+        >
+    
+        <EditText
+            android:id="@+id/contacto_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos_nombre_label"
+            android:theme="@style/MyTheme"/>
+    
+        <EditText
+            android:id="@+id/contacto_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos_nacimiento_label"
+            android:theme="@style/MyTheme"/>
+
+        <EditText
+            android:id="@+id/contacto_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos_telefono_label"
+            android:theme="@style/MyTheme"/>
+    
+        <EditText
+            android:id="@+id/contacto_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos_email_texto"
+            android:theme="@style/MyTheme"/>
+    
+        <EditText
+            android:id="@+id/contacto_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos_descripcion_texto"
+            android:lines="1"
+            android:maxLines="3"
+            android:theme="@style/MyTheme"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contacto_btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datos_boton_label"
+        android:layout_marginBottom="0dp"
+        />
+</LinearLayout>

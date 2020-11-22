@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ingresar datos</string>
+    <string name="datos_nombre_label">Nombre completo</string>
+    <string name="datos_nacimiento_label">Fecha de nacimiento</string>
+    <string name="datos_telefono_label">Teléfono</string>
+    <string name="datos_email_texto">Email</string>
+    <string name="datos_descripcion_texto">Descripción del contacto</string>
+    <string name="datos_boton_label">Siguiente</string>
+</resources>
