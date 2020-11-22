@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -9,16 +9,38 @@
     </style>
 
 
-    <style name="MyTheme" parent="android:style/Theme.NoTitleBar">
-        <item name="android:editTextStyle">@style/CamposEditables</item>
-        <item name="android:layout_marginTop">20dp</item>
+    <style name="LayoutPrincipal">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
     <style name="CamposEditables" parent="android:style/Widget.EditText">
-        <item name="android:colorActivatedHighlight">@color/colorCampoActivo</item>
-        <item name="android:colorBackground">@color/colorCampoFondo</item>
-        <item name="android:color">@color/colorCampoTexto</item>
+        <item name="android:textColor">@color/colorCampoTexto</item>
         <item name="android:textSize">14dp</item>
         <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="Titulos" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTitulos</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Textos" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorCampoTexto</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="Botones" parent="android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorCampoTexto</item>
+        <item name="android:background">@color/colorBotones</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
     </style>
 </resources>

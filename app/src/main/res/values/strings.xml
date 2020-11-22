@@ -5,5 +5,13 @@
     <string name="datos_telefono_label">Teléfono</string>
     <string name="datos_email_texto">Email</string>
     <string name="datos_descripcion_texto">Descripción del contacto</string>
-    <string name="datos_boton_label">Siguiente</string>
+    <string name="datos_boton_siguiente_label">Siguiente</string>
+    <string name="datos_boton_editar_label">Editar datos</string>
+
+
+    <string name="par_nombre">par_nombre</string>
+    <string name="par_nacimiento">par_nacimiento</string>
+    <string name="par_telefono">par_telefono</string>
+    <string name="par_email">par_email</string>
+    <string name="par_descripcion">par_descripcion</string>
 </resources>

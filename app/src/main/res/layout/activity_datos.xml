@@ -1,60 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/LayoutPrincipal"
     tools:context=".DatosActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
 
-    <EditText
-        android:id="@+id/datos_nombre"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/datos_nombre_label"
-        android:theme="@style/MyTheme"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_nombre_label"
+            style="@style/Titulos"/>
+        <TextView
+            android:id="@+id/datos_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textos"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha de Nacimiento"
-        android:theme="@style/MyTheme"
-        />
-    <DatePicker
-        android:tooltipText="Fecha de Nacimiento"
-        android:id="@+id/datos_fecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:datePickerMode="spinner"
-        android:calendarViewShown="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_nacimiento_label"
+            style="@style/Titulos"/>
+        <TextView
+            android:id="@+id/datos_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textos"/>
 
-    <EditText
-        android:id="@+id/datos_telefono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/datos_telefono_label"
-        android:theme="@style/MyTheme"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_telefono_label"
+            style="@style/Titulos"/>
+        <TextView
+            android:id="@+id/datos_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textos"/>
 
-    <EditText
-        android:id="@+id/datos_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/datos_email_texto"
-        android:theme="@style/MyTheme"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_email_texto"
+            style="@style/Titulos"/>
+        <TextView
+            android:id="@+id/datos_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textos"/>
 
-    <EditText
-        android:id="@+id/datos_descripcion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/datos_descripcion_texto"
-        android:lines="1"
-        android:maxLines="3"
-        android:theme="@style/MyTheme"/>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_descripcion_texto"
+            style="@style/Titulos"/>
+        <TextView
+            android:id="@+id/datos_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Textos"/>
+        
+        <Button
+            android:id="@+id/datos_btnEditar"
+            android:text="@string/datos_boton_editar_label"
+            style="@style/Botones"
+            />
+    </LinearLayout>
 </LinearLayout>
-</ScrollView>

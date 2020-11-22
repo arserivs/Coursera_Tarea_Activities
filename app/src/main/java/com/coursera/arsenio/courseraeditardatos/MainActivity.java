@@ -24,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
         contacto_nacimiento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 DialogFragment fecha = new CalendarioFragment();
                 ((CalendarioFragment) fecha).setearCampo(contacto_nacimiento);
                 fecha.show(getSupportFragmentManager(),"Fecha de nacimiento");
+
             }
         });
+
 
         Button contacto_btnSiguiente = findViewById(R.id.contacto_btnSiguiente) ;
         contacto_btnSiguiente.setOnClickListener(new View.OnClickListener() {
@@ -37,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, DatosActivity.class) ;
-                intent.putExtra("contacto_nombre", ((EditText) findViewById(R.id.contacto_nombre)).getText().toString());
-                intent.putExtra("contacto_nacimiento", ((EditText) findViewById(R.id.contacto_nacimiento)).getText().toString());
-                intent.putExtra("contacto_telefono", ((EditText) findViewById(R.id.contacto_telefono)).getText().toString());
-                intent.putExtra("contacto_email", ((EditText) findViewById(R.id.contacto_email)).getText().toString());
-                intent.putExtra("contacto_descripcion", ((EditText) findViewById(R.id.contacto_descripcion)).getText().toString());
+                intent.putExtra(getResources().getString(R.string.par_nombre), ((EditText) findViewById(R.id.contacto_nombre)).getText().toString());
+                intent.putExtra(getResources().getString(R.string.par_nacimiento), ((EditText) findViewById(R.id.contacto_nacimiento)).getText().toString());
+                intent.putExtra(getResources().getString(R.string.par_telefono), ((EditText) findViewById(R.id.contacto_telefono)).getText().toString());
+                intent.putExtra(getResources().getString(R.string.par_email), ((EditText) findViewById(R.id.contacto_email)).getText().toString());
+                intent.putExtra(getResources().getString(R.string.par_descripcion), ((EditText) findViewById(R.id.contacto_descripcion)).getText().toString());
 
                 startActivity(intent);
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         public void populateSetDate(int year, int month, int day) {
 
 
-            this.campo.setText(day+"-"+month+"-"+year);
+            this.campo.setText((day<10?"0":"")+ day+"/"+(month<10?"0":"")+month+"/"+year);
         }
 
     }
